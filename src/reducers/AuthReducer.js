@@ -24,7 +24,7 @@ export default (state = INITIAL_STATE, action) => {
         case LOGIN_USER_SUCCESS:
         //test; will result in error occurring and results in firebase going to catch.
        // return { ...state, user: action.payload, error: '', loading: false, email: '', password: '' }; //reset error message if there was one
-        return { ...state, ...INITIAL_STATE, user: action.payload };ß
+        return { ...state, ...INITIAL_STATE, user: action.payload }; 
         case LOGIN_USER_FAIL:
         return { ...state, error: 'Authentication Failed', password: '', loading: false }; //reset password
         case LOGIN_USER_START: 
