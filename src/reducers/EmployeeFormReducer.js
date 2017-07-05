@@ -1,7 +1,7 @@
 import {
     EMPLOYEE_UPDATE,
     EMPLOYEE_CREATE,
-    EMPLOYEES_FETCH_SUCCESS
+    EMPLPOYEE_SAVE_SUCCESS
 } from '../actions/types';
 
 //intialize state to empty object
@@ -23,6 +23,8 @@ export default (state = INITIAL_STATE, action) => {
         //and then pass newState
             return { ...state, [action.payload.prop]: action.payload.value };
         case EMPLOYEE_CREATE:
+            return INITIAL_STATE;
+        case EMPLPOYEE_SAVE_SUCCESS:
             return INITIAL_STATE;
         default: 
             return state;
